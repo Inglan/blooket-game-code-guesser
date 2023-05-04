@@ -46,6 +46,7 @@ while True:
 	if isgame(gid):
 		print('GAME FOUND!!!!!')
 		print(gid)
-		webbrowser.open('https://play.blooket.com/play?id='+gid)
+		if input('Type o and then <enter> to open browser, type anything else to exit: ').strip() == o:
+			webbrowser.open('https://play.blooket.com/play?id='+gid)
 		exit(0)
 		break
